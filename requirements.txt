@@ -1,1 +1,5 @@
-pip install streamlit tensorflow pillow pandas plotly
+streamlit==1.31.0
+tensorflow==2.15.0
+pillow==10.2.0
+pandas==2.2.0
+plotly==5.18.0
