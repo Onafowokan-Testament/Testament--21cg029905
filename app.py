@@ -166,11 +166,12 @@ def save_to_database(name, email, emotion, confidence, image_path):
             (name, email, emotion, confidence, timestamp, image_path),
         )
         conn.commit()
-        conn.close()
+        conn.close() 
         return True
     except Exception as e:
         st.error(f"Database error: {str(e)}")
         return False
+
 
 
 def get_prediction_history(limit=10):
